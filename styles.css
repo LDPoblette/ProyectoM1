@@ -1,40 +1,67 @@
-
+body{
+    background-color: black;
+}
 /* HEADER */
 
-.header > *{
+.header{
     width: 100%;
-    height: 130px;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: blue;
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+    border-bottom: solid black 2px;
+    
+    text-align: center;
 }
 
 .logo img{
     width: 15%;
     padding: 5px;
     margin: 25px 30px;
-    background-color: teal;
 }
 
+/* NAVBAR */
+
 .navbar{
-    width: 35%;
-    height: 130px;
-    background-color: blueviolet;
+    width: 100%;
+    height: 50px;
+
+    border: solid rgba(255, 217, 0, 0.544);
+    background-color: black;
 }
 
 .navbar ul li{
-    list-style: none;
+    background-color: brown;
     display: inline-block;
+
+    list-style: none;
     margin-left: 40px;
-    background-color: aquamarine;
+    color: white;
 }
 
 /* MAIN */
 
 main{
-    height: 600px;
+    padding: 2px;
+    background-color: black;
 }
 
-main div{
+.carousel-item{
+    width: 100%;
+}
+
+/* FOOTER */
+
+.contact{
+    height: 200px;
+    padding: 3px 0 5px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
     background-color: black;
+}
+
+.contact div{
+    width: 99%;
+    background-color: white;
 }
