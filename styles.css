@@ -56,7 +56,7 @@ main{
     padding: 3px 0 5px;
 
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 33.3%);
 
     background-color: black;
 }
@@ -64,4 +64,9 @@ main{
 .contact div{
     width: 99%;
     background-color: white;
+
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    color: rgb(71, 66, 66);
 }
