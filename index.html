@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Se agregan fuentes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    
     <title>AbogadosEspAd</title>
 </head>
 <body>
@@ -14,30 +20,30 @@
         </a>
     </header>
 
-    <nav class="navbar">
+    <nav class="navbar-a">
       <ul>
-          <li>Inicio</li>
-          <li>Quienes somos</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
+          <li><a href="#sec1">Inicio</a></li>
+          <li><a href="#sec2">Quienes somos</a></li>
+          <li><a href="#sec3">Servicios</a></li>
+          <li><a href="#sec4">Contacto</a></li>
       </ul>
   </nav>
 
-    <main>
+    <main id="sec1">
       <!-- Inicia sección de carrusel -->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="40">
             <!-- Empieza primer div -->
           <div class="carousel-inner">
               <!-- Item 1 -->
-              <div class="carousel-item active">
+              <div class="carousel-item active" id="car1">
                 <img src="./Imgs/slide1.jpg" class="d-block w-100" alt="img1">
               </div>
               <!-- Item 2 -->
-              <div class="carousel-item">
+              <div class="carousel-item" id="car2">
                 <img src="./Imgs/slide2.jpg" class="d-block w-100" alt="img2">
               </div>
               <!-- Item 3 -->
-              <div class="carousel-item">
+              <div class="carousel-item" id="car3">
                 <img src="./Imgs/Slide3.jpg" class="d-block w-100" alt="img3">
               </div>
             </div>
@@ -58,7 +64,80 @@
         <!-- Termina sección de carrusel -->
     </main>
 
-    <footer class="contact">
+    <section class="nosotros" id="sec2">
+      <div>
+        <h1>
+          ¿Quienes somos?
+        </h1>
+  
+        <p>
+          Somos un buffete de abogados fundado por el Lic. En Derecho 
+           José Luis Poblette Bautista en 1999. Desde entonces, este buffete 
+           se ha encargado de trabajar bajo los más altos estandares de calidad, 
+           siempre respetando los estatutos de la ley y la empatia humana.
+          <br><br>
+          Nos caracterizamos por la buena relación que generamos
+          con nuestros clientes, por nuestra rectitud, actitud positiva
+          y, por supuesto, por el excelente desempeño en cada caso. Ningun otro buffete
+          se preocupa tanto por el cliente,  sus necesidades y  su economia como lo
+          hacemos nostros.
+        </p>
+      </div>
+      
+      <img src="Imgs/hola.svg" alt="we are">
+    </section>
+
+    <section class="servicios" id="sec3">
+      <article>
+        <img src="./Imgs/icon1" alt="icon1">
+
+        <h3>
+          Civil
+        </h3>
+
+        <p>
+          Descripción
+        </p>
+      </article>
+
+      <article>
+        <img src="./Imgs/icon2" alt="icon2">
+
+        <h3>
+          Familiar
+        </h3>
+
+        <p>
+          Descripción
+        </p>
+      </article>
+
+      <article>
+        <img src="./Imgs/icon3" alt="icon3">
+
+        <h3>
+          Penal
+        </h3>
+
+        <p>
+          Descripción
+        </p>
+      </article>
+
+      <article>
+        <img src="./Imgs/icon4" alt="icon4">
+
+        <h3>
+          Adolescentes
+        </h3>
+
+        <p>
+          Descripción
+        </p>
+      </article>
+    </section>
+
+    <footer class="contact" id="sec4">
       <div>
         <h4>
           Dirección:
